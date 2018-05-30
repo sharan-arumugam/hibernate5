@@ -1,0 +1,22 @@
+apply plugin: 'java-library'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+
+	// MySQL Connector
+	api 'mysql:mysql-connector-java:8.0.11'
+	
+	// Hibernate
+	api 'org.hibernate:hibernate-core:5.3.1.Final'
+	
+	// Lombok
+	implementation 'org.projectlombok:lombok:1.16.22'
+	
+	// Test
+    testImplementation 'junit:junit:4.12'
+}
